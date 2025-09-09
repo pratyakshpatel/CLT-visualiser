@@ -5,8 +5,8 @@ demonstrates how sample means become normal regardless of the original distribut
 ## quick start
 
 ```bash
-git clone <your-repo-url>
-cd CLT
+git clone https://github.com/pratyakshpatel/clt-visualiser.git
+cd clt-visualiser
 python main.py
 ```
 
