@@ -1,0 +1,27 @@
+# how to connect to github - authentication setup
+
+# option 1: configure git with your github credentials
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
+
+# option 2: check if you're already configured
+git config --global user.name
+git config --global user.email
+
+# option 3: for https authentication (easiest)
+# when you push, github will ask for:
+# username: your-github-username
+# password: your-personal-access-token (NOT your github password!)
+
+# option 4: create personal access token
+# 1. go to github.com -> settings -> developer settings -> personal access tokens
+# 2. generate new token (classic)
+# 3. select scopes: repo (full control)
+# 4. copy the token and use it as password when git asks
+
+# option 5: verify connection
+git remote -v
+
+# should show:
+# origin  https://github.com/pratyakshpatel/clt-visualiser.git (fetch)
+# origin  https://github.com/pratyakshpatel/clt-visualiser.git (push)
